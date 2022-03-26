@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 * {
-	/* background: rgb(231, 231, 231); */
 	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
 }
@@ -10,21 +9,35 @@
 	margin-top: 50px;
 	margin-left: 50px;
 	width: 500px;
-	height: 500px;
+	height: 250px;
 	background: rgb(231, 231, 231);
 	border-radius: 100px;
 }
 
+.button {
+	background: rgb(231, 231, 231);
+
+	border-radius: 25px;
+	border-style:hidden;
+
+	font-size: 50px;
+	font-weight: 100;
+	color: white;
+
+	width: 200px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: table;
+	margin: auto;
+}
+
 #timer {
-	font-size: 350px;
+	font-size: 150px;
 	color: white;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	display: table;
 	margin: auto;
-	/* left: 50%; */
-	/* text-align: center;
-    display: table-cell;
-	line-height: 319px; */
 }
