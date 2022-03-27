@@ -9,8 +9,32 @@
 </head>
 <body>
 	<div class="block">
-		<p id="timer"></p>
-		<button onclick="buttonClick()" class="button">Start</button>
+		<div class="time_count">
+			<div class="time_count_blocks">
+				<div class="time_sec">
+					<div class="time_count_val">00</div>
+				</div>
+				<div class="separator">:</div>
+				<div class="time_min">
+					<div class="time_count_val">00</div>
+				</div>
+				<div class="separator">:</div>
+				<div class="time_hour">
+					<div class="time_count_val">00</div>
+				</div>
+			</div>
+			<div class="buttons_conteiner">
+				<div class="buttons_block">
+					<button id="start" class="button">Start</button>
+				</div>
+				<div class="buttons_block">
+					<button id="pause" class="button">Pause</button>
+				</div>
+				<div class="buttons_block">
+					<button id="stop" class="button">Stop</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="js/main.js"></script>

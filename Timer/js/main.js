@@ -1,30 +1,11 @@
-var sec = 0;
-var minute = 0;
-var hour = 0
+// let second = 00,
+// 		minute = 00,
+// 		hour = 00,
+// 		cnt;
 
-var timer = document.getElementById("timer");
+// const secondElement = document.querySelector()
 
-function timeWrite()
-{
-	if (sec === 60)
-	{
-		sec = 0;
-		minute++;
-	}
-	if (minute === 60)
-	{
-		minute = 0;
-		hour++;
-	}
-	timer.innerHTML = hour + ":" + minute + ":" + sec;
-}
+// const startButton = document.querySelector("#start");
+// const pauseButton = document.querySelector("#pause");
+// const stopButton = document.querySelector("#stop");
 
-function buttonClick()
-{
-	setInterval(() => {	//	seconds counter
-		sec++;
-	}, 1000);
-	setInterval(timeWrite, 1000);
-}
-
-timeWrite();
