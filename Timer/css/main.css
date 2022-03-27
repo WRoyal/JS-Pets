@@ -32,6 +32,7 @@ body {
 	/* Note: backdrop-filter has minimal browser support */
 	
 	border-radius: 36px;
+	box-shadow: rgba(0, 0, 0, 0.087) 7px 7px 15px;
 
 }
 
@@ -42,6 +43,7 @@ body {
 	align-items: center;
 	font-weight: 400;
 	font-size: 70px;
+	text-shadow: rgba(0, 0, 0, 0.121) 1px 0 10px;
 }
 
 .time_count_val {
@@ -64,9 +66,10 @@ body {
 .button {
 	font-size: 20px;
 	background: none;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.65);
 	border-style: hidden;
 	border-width: 50px;
+	text-shadow: rgba(0, 0, 0, 0.121) 1px 0 10px;
 }
 
 .buttons_block {
@@ -75,4 +78,17 @@ body {
 	align-items: center;
 	min-height: 30px;
 	min-width: 150px;
+}
+
+.change_back:hover {
+	color: rgba(255, 255, 255, 0.8);
+}
+.change_back {
+	background: none;
+	border-style: hidden;
+	display: flex;
+	top: 1250px;
+	position:absolute;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 20px;
 }
