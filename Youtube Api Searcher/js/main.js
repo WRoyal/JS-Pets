@@ -4,6 +4,7 @@ let searchButton = document.querySelector('.search-button'),
 		videoList = document.querySelector('.video-list');
 
 let keyWord, youtubeList;
+let viewsMas = [];
 
 searchButton.addEventListener('click', () => {
 	if (searchLine.value == '')
@@ -15,6 +16,7 @@ searchButton.addEventListener('click', () => {
 function displayBlock(youtubeList)
 {
 		videoList.innerHTML = '';
+
 		for (let i = 0; i < 10; i++)
 		{
 			let name = strCut(youtubeList.items[i].snippet.title, 45);

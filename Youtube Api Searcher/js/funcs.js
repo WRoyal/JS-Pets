@@ -44,3 +44,27 @@ function getFullTime(inputTime)
     finalTime = day + " " + getMonth(month) + " " + year + " г.";
     return finalTime;
 }
+
+function sortVideoViews(youtubeList, viewsMas)
+{
+    let tmpList;
+    let tmpView;
+
+    for (let i = 9; i > 0; i--)
+    {
+        let numViews2 = Number(viewsMas.items[i].statistics.viewCount);
+        let numViews1 = Number(viewsMas.items[i - 1].statistics.viewCount);
+        if (numViews2 > numViews1)
+        {
+            tmpView = viewsMas.items[i];
+            viewsMas.items[i] = viewsMas.items[i - 1];
+            viewsMas.items[i - 1] = tmpView;
+            tmpList = youtubeList.items[i];
+            youtubeList.items[i] = youtubeList.items[i - 1];
+            youtubeList.items[i - 1] = tmpList;
+            i = 9;
+        }
+    }
+    displayBlock(youtubeList);
+    console.log(viewsMas);
+}
