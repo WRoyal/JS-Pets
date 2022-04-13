@@ -3,13 +3,14 @@
 * {
 	font-family: 'Roboto', sans-serif;
 	font-size: 90px;
-	color: rgb(219, 215, 193);
+	color: rgb(255, 255, 255);
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	background-color:rgb(245, 237, 216) ;
+	/* background-color:rgb(245, 237, 216) ; */
+	background-color: rgb(57, 57, 57);
 }
 .main {
 	width: 100%;
@@ -19,7 +20,7 @@ body {
 	justify-content: center;
 }
 .main-block{
-	margin-top: 30vh;
+	margin-top: 150px;
 	width: 510px;
 	height: 510px;
 	display:flex;
@@ -39,16 +40,17 @@ body {
 
 	width: 150px;
 	height: 150px;
+	border-radius: 5px;
 
-	background-color: rgb(254, 249, 224);
-	box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+	/* background-color: rgb(254, 249, 224); */
+	background-color: rgb(39, 39, 39);
+	box-shadow: rgb(255, 255, 255) 3px 3px 3px;
 	transition: ease-in-out .14s;
 	cursor: pointer;
 }
 .panel > div:hover {
 	width: 170px;
 	height: 170px;
-	font-size: 100px;
-	/* border-radius: 15px; */
-	box-shadow: rgba(0, 0, 0, 0.14) 2px 2px 7px;
-} 
+	font-size: 150px;
+	border-radius: 15px;
+}
